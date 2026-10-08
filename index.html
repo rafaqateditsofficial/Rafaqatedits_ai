@@ -2,31 +2,64 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rafaqatedits AI — Gemini AI Workspace</title>
+<meta name="description" content="Rafaqatedits AI — professional all-in-one AI workspace.">
+<title>Rafaqatedits AI — AI Workspace</title>
 <link rel="icon" href="logo.svg"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="app">
-<header class="top"><a class="brand" href="index.html"><img src="logo.svg"><b>Rafaqatedits <span>AI</span></b></a>
-<div class="actions"><button onclick="openSettings()">⚙️ API Settings</button><button class="dots" onclick="toggleMenu()">⋮</button></div>
-<div id="menu" class="menu"><a href="index.html">Home</a><a href="#chat">AI Chat</a><button onclick="openSettings()">API Settings</button></div>
-</header>
-<main>
-<section class="hero"><small>⚡ GOOGLE AI STUDIO / GEMINI READY</small><h1>Turn Your Ideas Into <span>Reality with AI</span></h1>
-<p>Connect your Google AI Studio Gemini API key locally and start chatting with AI from your Rafaqatedits AI website.</p>
-<button class="primary" onclick="openSettings()">Connect Gemini API →</button></section>
-<section id="chat" class="chat-card"><div class="head"><div><h2>💬 AI Chat</h2><p>Real Gemini responses appear here after you connect your key.</p></div><span id="status" class="status">Not connected</span></div>
-<div id="messages" class="messages"><div class="ai msg">Hello! 👋 Connect your Gemini API key, then send me a message.</div></div>
-<div class="composer"><textarea id="prompt" placeholder="Ask Gemini anything..." onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMessage()}"></textarea><button class="primary" onclick="sendMessage()">Send ↑</button></div></section>
-<section class="features"><div><b>🔒 Key stays local</b><p>Your API key is stored only in this browser, not inside the website files.</p></div><div><b>⚡ Gemini Chat</b><p>Uses Google AI Studio's Gemini API directly from the browser.</p></div><div><b>📱 Responsive</b><p>Works on phone, tablet and desktop.</p></div></section>
-</main><footer>© 2026 Rafaqatedits AI • Gemini-ready workspace</footer>
-</div>
-<div id="settings" class="modal"><div class="modalbox"><button class="close" onclick="closeSettings()">×</button><h2>🔑 Gemini API Settings</h2>
-<p>Paste your <b>new</b> Google AI Studio API key below. Never upload the key into GitHub.</p>
-<input id="apiKey" type="password" placeholder="Paste your Gemini API key">
-<label><input id="showKey" type="checkbox" onclick="document.getElementById('apiKey').type=this.checked?'text':'password'"> Show key</label>
-<div class="row"><button class="primary" onclick="saveKey()">Save & Connect</button><button onclick="clearKey()">Remove Key</button></div>
-<p class="hint">For a public GitHub Pages site, this browser-only setup keeps the key out of your repository. For a production app, use a backend proxy/secret.</p>
-</div></div>
+<div class="shell">
+<aside class="sidebar">
+<a class="brand" href="index.html"><img src="logo.svg" alt=""><div><strong>Rafaqatedits <span>AI</span></strong><small>Smart Tools · Better Ideas</small></div></a>
+<nav>
+<a class="nav active" href="index.html">⌂ &nbsp; Home</a>
+<div class="label">AI TOOLS</div>
+<a class="nav" href="chat.html">◌ &nbsp; AI Chat</a><a class="nav" href="image.html">▧ &nbsp; AI Image</a>
+<a class="nav" href="video.html">▶ &nbsp; AI Video</a><a class="nav" href="writing.html">✎ &nbsp; AI Writer</a>
+<a class="nav" href="coding.html">&lt;/&gt; &nbsp; AI Coding</a><a class="nav" href="voice.html">◉ &nbsp; AI Voice</a>
+<a class="nav" href="search.html">⌕ &nbsp; AI Search</a><a class="nav" href="agents.html">✦ &nbsp; AI Agents</a>
+<div class="label">WORKSPACE</div>
+<a class="nav" href="projects.html">▱ &nbsp; My Projects</a><a class="nav" href="history.html">◷ &nbsp; History</a>
+<a class="nav" href="favorites.html">♡ &nbsp; Favorites</a><a class="nav" href="settings.html">⚙ &nbsp; Settings</a>
+</nav>
+<div class="upgrade"><b>✦ Rafaqatedits AI</b><p>One clean workspace for your AI tools.</p><a href="pricing.html">Explore Plans →</a></div>
+<div class="side-foot">© 2026 Rafaqatedits AI</div>
+</aside>
+
+<main class="main">
+<header class="topbar"><div class="mobile-brand"><img src="logo.svg" alt=""><b>Rafaqatedits <span>AI</span></b></div>
+<div class="search">⌕ &nbsp; Search AI tools...</div>
+<div class="top-actions"><button class="icon" onclick="openSettings()">⚙</button><a class="profile" href="profile.html"><span>R</span> Rafaqat Edits⌄</a></div></header>
+
+<section class="hero">
+<div class="hero-copy"><small>ALL-IN-ONE AI WORKSPACE</small><h1>Create. Edit. <em>Build.</em></h1>
+<p>Professional AI tools for creators, editors, students and everyday work — all in one clean workspace.</p>
+<div class="hero-buttons"><a class="btn primary" href="#tools">Explore AI Tools →</a><a class="btn" href="chat.html">Open AI Chat ↗</a></div>
+<div class="meta">✓ Fast workflow &nbsp;&nbsp; ✓ Modern tools &nbsp;&nbsp; ✓ Mobile friendly</div></div>
+<div class="hero-art"><div class="glow"></div><div class="laptop"><div class="screen"><b>R</b><i></i><i></i><i></i><div class="mini-grid"><span></span><span></span><span></span></div></div><div class="base"></div></div><div class="float one">✦ AI Ready</div><div class="float two">↗ Create Faster</div></div>
+</section>
+
+<section class="section" id="tools"><div class="section-head"><div><h2>All AI Tools</h2><p>Choose a tool and get straight to work.</p></div></div>
+<div class="tool-grid">
+<a class="tool" href="chat.html"><div class="thumb chat"><b>●</b><span>Hello!</span><span>How can I help?</span></div><h3>AI Chat <i>→</i></h3><p>Ask questions, brainstorm and get instant answers.</p></a>
+<a class="tool" href="image.html"><div class="thumb image"><b>✦</b><i></i></div><h3>AI Image <i>→</i></h3><p>Create and explore visual ideas with AI.</p></a>
+<a class="tool" href="video.html"><div class="thumb video"><b>●</b><div></div></div><h3>AI Video <i>→</i></h3><p>Turn concepts into polished video workflows.</p></a>
+<a class="tool" href="writing.html"><div class="thumb writer"><b>R</b><i></i><i></i><i></i></div><h3>AI Writer <i>→</i></h3><p>Write posts, emails, scripts and professional copy.</p></a>
+<a class="tool" href="coding.html"><div class="thumb code"><b>&lt;/&gt;</b><i></i><i></i></div><h3>AI Coding <i>→</i></h3><p>Generate, explain, debug and improve code.</p></a>
+<a class="tool" href="voice.html"><div class="thumb voice"><b>●</b><div class="wave">▁▃▆▃▁</div></div><h3>AI Voice <i>→</i></h3><p>Work with speech, voice and audio ideas.</p></a>
+<a class="tool" href="search.html"><div class="thumb search-thumb"><b>⌕</b><i></i><i></i></div><h3>AI Search <i>→</i></h3><p>Find information faster with a focused workspace.</p></a>
+<a class="tool" href="agents.html"><div class="thumb agents"><b>✦</b><i>⚙</i><i>⚙</i></div><h3>AI Agents <i>→</i></h3><p>Organize multi-step tasks and smarter workflows.</p></a>
+</div></section>
+
+<section class="chat-preview"><div><small>GEMINI WORKSPACE</small><h2>Ask anything. <em>Start creating.</em></h2><p>Connect Gemini from API Settings to use the live AI chat directly on this page.</p><button class="btn primary" onclick="openSettings()">Connect Gemini →</button></div>
+<div class="chat-box"><div class="chat-title">● AI Chat <small id="status">Not connected</small></div><div id="messages" class="messages"><div class="msg ai">Hello! Connect Gemini and ask me anything.</div></div>
+<div class="composer"><textarea id="prompt" placeholder="Ask Gemini anything..." onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMessage()}"></textarea><button onclick="sendMessage()">Send</button></div></div></section>
+
+<section class="cta"><div><small>RAFAQATEDITS AI</small><h2>One workspace. More possibilities.</h2><p>Explore the tools and build your next idea.</p></div><a class="btn primary" href="#tools">Explore Tools →</a></section>
+<footer><span>© 2026 Rafaqatedits AI</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="help.html">Help</a></span></footer>
+</main></div>
+
+<div id="settings" class="modal"><div class="modalbox"><button class="close" onclick="closeSettings()">×</button><div class="modal-icon">⌁</div><h2>Gemini API Settings</h2><p>Paste your new Google AI Studio API key. Never put the key inside GitHub files.</p>
+<input id="apiKey" type="password" placeholder="Paste your Gemini API key"><label><input id="showKey" type="checkbox" onclick="document.getElementById('apiKey').type=this.checked?'text':'password'"> Show key</label>
+<div class="modal-actions"><button class="btn primary" onclick="saveKey()">Save & Connect</button><button class="btn" onclick="clearKey()">Remove Key</button></div><small>Browser-only storage is for personal testing. Production apps should use a secure backend.</small></div></div>
 <script src="app.js"></script>
 </body></html>
