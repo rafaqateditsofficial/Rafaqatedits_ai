@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#36b7ff"/><stop offset=".55" stop-color="#6870ff"/><stop offset="1" stop-color="#a05cff"/></linearGradient></defs>
-<rect width="64" height="64" rx="16" fill="#0b1730"/>
-<path d="M13 47 22 17h8l6 18 7-18h8l-9 30h-8l-6-18-5 18z" fill="url(#g)"/>
-<path d="M42 17h10c10 0 15 5 15 12 0 5-3 9-8 11l9 7H57l-8-8h-1v8h-6zm6 7v9h3c4 0 6-2 6-5s-2-4-6-4z" fill="#f1f5ff"/>
-<text x="76" y="29" fill="#f4f7ff" font-family="Arial, sans-serif" font-size="17" font-weight="700">Rafaqatedits</text>
-<text x="76" y="47" fill="#8d72ff" font-family="Arial, sans-serif" font-size="15" font-weight="700">AI</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 90"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b8ffe0"/><stop offset=".45" stop-color="#35e58b"/><stop offset="1" stop-color="#079b55"/></linearGradient></defs><rect width="220" height="90" rx="20" fill="#03100b"/><path d="M42 64V25h15l20 20V25h16v39H78L58 45v19z" fill="url(#g)"/><path d="M82 63l35-39 13 8-33 39z" fill="#eafff4"/><path d="M37 60c16 13 52 15 83-5 14-9 21-19 25-31" fill="none" stroke="#35e58b" stroke-width="5" stroke-linecap="round"/><path d="M144 18l2 7 7 2-7 2-2 7-2-7-7-2 7-2z" fill="#62f1a7"/><text x="163" y="49" fill="#f3fff8" font-family="Arial" font-size="18" font-weight="800">RAFAQATEDITS</text><text x="163" y="68" fill="#36e58b" font-family="Arial" font-size="15" font-weight="800">AI</text></svg>
